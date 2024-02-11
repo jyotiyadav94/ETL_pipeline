@@ -911,7 +911,7 @@ python-dotenv
 
 MongoDB is a popular NoSQL database management system known for its flexibility, scalability, and ease of use. In the project, MongoDB was utilized via MongoDB Atlas, the cloud-based database service offered by MongoDB. MongoDB Atlas provides a fully managed and scalable database solution, enabling efficient storage, retrieval, and management of data without the need for infrastructure management.
 
-<img width="1440" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/e9b5202d-4310-448f-96c1-1c3a666dd26c">
+![Alt text](<images/Screenshot 2024-02-11 at 19.20.18.png>)
 
 
 # **Dockerfile & Docker-compose**
@@ -979,13 +979,13 @@ services:
 - Converts ObjectId to string for serialization.
 - Returns a JSON response containing all records.
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/83493f90-412b-45cf-b247-bb6b04b7d599">
+![Alt text](<images/Screenshot 2024-02-11 at 19.35.31.png>)
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/67a9e527-82d6-42aa-bb47-db71dfb1577a">
+![Alt text](<images/Screenshot 2024-02-11 at 19.36.36.png>)
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/6c221daf-0746-4e7b-9c68-e0bac50bb5e8">
+![Alt text](<images/Screenshot 2024-02-11 at 19.37.10.png>)
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/f3422f1a-8ca8-4fb0-a75c-bff4be1cbe49">
+![Alt text](<images/Screenshot 2024-02-11 at 19.37.30.png>)
 
 
 #### `/data/{citycode}` Endpoint:
@@ -996,11 +996,11 @@ services:
 - Returns a JSON response containing the record details.
 - Returns a 404 Not Found response if no record is found.
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/6f9ccebb-1dfa-441a-a5f7-332bb948dcc3">
+![Alt text](<images/Screenshot 2024-02-11 at 19.37.54.png>)
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/0f5f532e-0e3d-4fe2-ade3-db5a0ab58e0e">
+![Alt text](<images/Screenshot 2024-02-11 at 19.38.25.png>)
 
-<img width="1434" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/be47c769-761f-45db-a85f-239abef98d24">
+![Alt text](<images/Screenshot 2024-02-11 at 19.38.43.png>)
 
 
 
@@ -1025,33 +1025,33 @@ services:
   - Secure Handling: References secrets as environment variables for secure application configuration.
 
 
-<img width="1420" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/7c6a0ab5-b98d-4d6a-80f7-d0a148544af6">
+![Alt text](<images/Screenshot 2024-02-11 at 19.52.00.png>)
 
 
 ```bash
 docker buildx build --platform linux/amd64 -t jyotiyadav79811/etl_pipeline:1.0.9 .
 ```
-<img width="1106" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/77e0b2ff-7f34-40d1-8d23-afc7fee7db14">
+![Alt text](<images/Screenshot 2024-02-11 at 19.59.23.png>)
 
 ```bash
 docker push jyotiyadav79811/etl_pipeline:1.0.9
 ```
-<img width="1106" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/55ff3ab5-84b5-4c0b-8121-da4452861bb3">
+![Alt text](<images/Screenshot 2024-02-11 at 20.00.35.png>)
 
-<img width="1422" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/5d222258-cc48-4297-b613-8d5f864caa6a">
+![Alt text](<images/Screenshot 2024-02-11 at 20.01.53.png>)
 
-<img width="1374" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/74d1f8a7-edf2-4143-86c7-9a7580965e18">
+![Alt text](<images/Screenshot 2024-02-11 at 20.17.50.png>)
 
-<img width="1374" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/806dbed5-6c4f-49e8-91bf-b5b460da008a">
+![Alt text](<images/Screenshot 2024-02-11 at 20.18.57.png>)
 
-<img width="1374" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/2b69abda-bba4-4917-9007-e63bdae0567b">
+![Alt text](<images/Screenshot 2024-02-11 at 20.19.22.png>)
 
 
 # **Pytests**
 
 ### Test Run successfully
 
-<img width="1123" alt="image" src="https://github.com/jyotiyadav94/ETL_pipeline/assets/72126242/e694274b-60a5-43c2-b9a5-dfd8ec8fda96">
+![Alt text](<images/Screenshot 2024-02-11 at 20.35.14.png>)
 
 
  ### test_extract.py
