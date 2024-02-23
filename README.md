@@ -82,6 +82,12 @@ ETL_pipeline/
      ```bash
      cd ETL_pipeline
      ```
+   - Create a file named `.env` in the app folder and add the following credentials:
+     ```plaintext
+     CLUSTER_URI=mongodb+srv://jojoyadav255:CbS1zFtduhiTwQB4@cluster0.912iw8i.mongodb.net/?retryWrites=true&w=majority
+     MONGODB_DATABASE=database
+     MONGODB_COLLECTION=collection
+     ```
 
 4. **Run Docker Images:**
    - Run the following command to start the Docker containers:
