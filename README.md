@@ -127,7 +127,7 @@ ETL_pipeline/
 
 ### assets.csv
 
-- This dataset contains a list of real estate properties located in Italy.
+- The dataset consists of information about different assets (properties or parcels of land) identified by unique asset IDs.
 - Each property is uniquely identified by the following fields: asset_id, cityCode, catasto, sezione, foglio, particella, and subalterno.
 - Fields particella and subalterno can only accept digits and letters ([a-zA-Z0-9]).
 <br>
@@ -136,9 +136,6 @@ ETL_pipeline/
 | asset_id  | cityCode | catasto | sezione? | foglio | particella | subalterno? |
 |-----------|----------|---------|----------|--------|------------|-------------|
 | string    | string   | string  | string   | string | string     | string      |
-
-
-The dataset consists of information about different assets (properties or parcels of land) identified by unique asset IDs.
 
 - **asset_id**: Unique identifier for each asset.
 - **cityCode**: Code identifying the city or municipality where the asset is located.
@@ -151,7 +148,7 @@ The dataset consists of information about different assets (properties or parcel
 
 
 ### entities.csv
-- This dataset contains a list of Italian citizens and companies.
+- This dataset contains information about different entities or individuals, each identified by a unique `entity_id`.
 - Each record must have at least one of vatCode and taxCode fields filled.
 - Field vatCode must be a valid Italian “partita iva” and field taxCode must be a valid Italian “codice fiscale”.
 <br>
@@ -161,24 +158,19 @@ The dataset consists of information about different assets (properties or parcel
 |-----------|------------|------------|
 | string    | string     | string     |
 
-This dataset contains information about different entities or individuals, each identified by a unique `entity_id`.
-
 - **entity_id**: Unique identifier for each entity or individual.
 - **taxCode**: Tax code or fiscal code associated with the entity. In Italy, this is known as "codice fiscale," a unique identifier used for tax purposes.
 - **vatCode**: Value-added tax (VAT) code associated with the entity. In Italy, this is known as "partita IVA," a unique identifier used for VAT purposes.
   
 
 ### assets_entities_join.csv
-- This dataset links the assets to the entities and contains the ownership share of each entity for their properties.
+- This dataset links the assets to the entities and contains the ownership share of each entity for their properties. It also has information related to the ownership shares of different assets, where each asset is identified by a unique `asset_id`. 
 - Fields marked with “‘?“ are optional.
 - The asset_id and entity_id fields are used to establish the relationship between assets and entities
 
 | entity_id | asset_id | ownershipShare |
 |-----------|----------|----------------|
 | string    | string   | string         |
-
-
-This dataset contain the information related to the ownership shares of different assets, where each asset is identified by a unique `asset_id`. 
 
 - **asset_id**: Unique identifier for each asset.
 - **entity_id**: Unique identifier for the entity or individual associated with the ownership share.
