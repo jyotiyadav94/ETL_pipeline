@@ -138,6 +138,18 @@ ETL_pipeline/
 | string    | string   | string  | string   | string | string     | string      |
 
 
+The dataset consists of information about different assets (possibly properties or parcels of land) identified by unique asset IDs. Here's a breakdown of the columns:
+
+- **asset_id**: Unique identifier for each asset.
+- **cityCode**: Code identifying the city or municipality where the asset is located.
+- **catasto**: This represent a category or classification related to cadastral or land registry information. It might indicate the type of land or property.
+- **sezione**: Refers to the section within a cadastral map or registry where the asset is located.
+- **foglio**: Represents the sheet number within the cadastral map or registry.
+- **particella**: Denotes the parcel number within the section and sheet identified above.
+- **subalterno**: Possibly refers to a subordinate or related entity or attribute of the asset.
+
+
+
 ### entities.csv
 - This dataset contains a list of Italian citizens and companies.
 - Each record must have at least one of vatCode and taxCode fields filled.
@@ -149,6 +161,12 @@ ETL_pipeline/
 |-----------|------------|------------|
 | string    | string     | string     |
 
+This dataset contains information about different entities or individuals, each identified by a unique `entity_id`. Here's a breakdown of the columns:
+
+- **entity_id**: Unique identifier for each entity or individual.
+- **taxCode**: Tax code or fiscal code associated with the entity. In Italy, this is known as "codice fiscale," a unique identifier used for tax purposes.
+- **vatCode**: Value-added tax (VAT) code associated with the entity. In Italy, this is known as "partita IVA," a unique identifier used for VAT purposes.
+  
 
 ### assets_entities_join.csv
 - This dataset links the assets to the entities and contains the ownership share of each entity for their properties.
@@ -159,6 +177,12 @@ ETL_pipeline/
 |-----------|----------|----------------|
 | string    | string   | string         |
 
+
+This dataset contain the information related to the ownership shares of different assets, where each asset is identified by a unique `asset_id`. Here's a breakdown of the columns:
+
+- **asset_id**: Unique identifier for each asset.
+- **entity_id**: Unique identifier for the entity or individual associated with the ownership share.
+- **ownershipShare**: Indicates the ownership share or percentage of ownership that the entity identified by `entity_id` holds in the asset identified by `asset_id`.
 
 ### Schema 
 ```json
