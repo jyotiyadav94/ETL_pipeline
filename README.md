@@ -118,7 +118,7 @@ ETL_pipeline/
    - To access the deployed endpoint on Google Cloud Platform, use the following URL:<br>
      [https://project-n5ni4ipgma-uc.a.run.app/data](https://project-n5ni4ipgma-uc.a.run.app/data)
     
-   - To retrieve data for a specific city, replace "L263" with the desired city code in the URL:
+   - To retrieve data for a specific city, replace "A024" with the desired city code in the URL:
      <br>
     [https://project-n5ni4ipgma-uc.a.run.app/data/A024](https://project-n5ni4ipgma-uc.a.run.app/data/A024)
 
