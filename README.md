@@ -138,7 +138,7 @@ ETL_pipeline/
 | string    | string   | string  | string   | string | string     | string      |
 
 
-The dataset consists of information about different assets (possibly properties or parcels of land) identified by unique asset IDs. Here's a breakdown of the columns:
+The dataset consists of information about different assets (properties or parcels of land) identified by unique asset IDs.
 
 - **asset_id**: Unique identifier for each asset.
 - **cityCode**: Code identifying the city or municipality where the asset is located.
@@ -161,7 +161,7 @@ The dataset consists of information about different assets (possibly properties 
 |-----------|------------|------------|
 | string    | string     | string     |
 
-This dataset contains information about different entities or individuals, each identified by a unique `entity_id`. Here's a breakdown of the columns:
+This dataset contains information about different entities or individuals, each identified by a unique `entity_id`.
 
 - **entity_id**: Unique identifier for each entity or individual.
 - **taxCode**: Tax code or fiscal code associated with the entity. In Italy, this is known as "codice fiscale," a unique identifier used for tax purposes.
@@ -178,7 +178,7 @@ This dataset contains information about different entities or individuals, each 
 | string    | string   | string         |
 
 
-This dataset contain the information related to the ownership shares of different assets, where each asset is identified by a unique `asset_id`. Here's a breakdown of the columns:
+This dataset contain the information related to the ownership shares of different assets, where each asset is identified by a unique `asset_id`. 
 
 - **asset_id**: Unique identifier for each asset.
 - **entity_id**: Unique identifier for the entity or individual associated with the ownership share.
