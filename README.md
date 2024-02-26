@@ -219,6 +219,7 @@ ETL_pipeline/
     - foglio
     - particella
 
+5. For More on Observations Refer to EDA folder.
 
 # **Implementation**
 
