@@ -140,8 +140,8 @@ ETL_pipeline/
 - **asset_id**: Unique identifier for each asset.
 - **cityCode**: Code identifying the city or municipality where the asset is located.
 - **catasto**: This represent a category or classification related to cadastral or land registry information. It might indicate the type of land or property.
-- **sezione**: Refers to the section within a cadastral map or registry where the asset is located.
-- **foglio**: Represents the sheet number within the cadastral map or registry.
+- **sezione**: It refers to the specific section or zone within a municipality
+- **foglio**: Represents the sheet number within the cadastral map or registry where it has a detailed information about land plots/parcel, boundaries, and other cadastral data is recorded.
 - **particella**: Denotes the parcel number within the section and sheet identified above.
 - **subalterno**: Possibly refers to a subordinate or related entity or attribute of the asset.
 
