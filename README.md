@@ -206,7 +206,7 @@ ETL_pipeline/
 
 1. When encountering invalid or incomplete data we had two approaches:
     *  Remove the entire row. ( This approach has been used in the project)
-    *  Remove the particular value in the subalterno column.
+    *  Remove the particular value in the particella column.
 
 2. After merging the three dataset vat code and tax code fields, some records have NaN (Not a Number) values.
 3. Regarding the ownershipShare field:
