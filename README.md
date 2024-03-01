@@ -84,9 +84,6 @@ ETL_pipeline/
      ```
    - Create a file named `.env` in the app folder and add the following credentials:
      ```plaintext
-     CLUSTER_URI=mongodb+srv://jojoyadav255:CbS1zFtduhiTwQB4@cluster0.912iw8i.mongodb.net/?retryWrites=true&w=majority
-     MONGODB_DATABASE=database
-     MONGODB_COLLECTION=collection
      ```
 
 4. **Run Docker Images:**
@@ -889,9 +886,6 @@ The following environment variables are used to configure the MongoDB connection
 
 
 ```dotenv
-CLUSTER_URI=mongodb+srv://jojoyadav255:CbS1zFtduhiTwQB4@cluster0.912iw8i.mongodb.net/?retryWrites=true&w=majority
-MONGODB_DATABASE=database
-MONGODB_COLLECTION=collection
 ```
 
 # **Requirements.txt**
